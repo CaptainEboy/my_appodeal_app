@@ -1,4 +1,4 @@
-package com.myappodealapp;
+package com.captaineboy.my_appodeal_app;
 
 import android.os.Build;
 import android.os.Bundle;

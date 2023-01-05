@@ -142,11 +142,12 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.myappodealapp"
+        applicationId 'com.captaineboy.my_appodeal_app'
+        multiDexEnabled true
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
 
         if (isNewArchitectureEnabled()) {
@@ -305,6 +306,9 @@ dependencies {
         }
     }
 
+    //Appodeal Implementation
+    implementation 'com.appodeal.ads:sdk:3.0.0.+'
+
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
@@ -325,6 +329,9 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    //Appodeal Multidex code
+    implementation 'com.android.support:multidex:1.0.3'
 }
 
 if (isNewArchitectureEnabled()) {

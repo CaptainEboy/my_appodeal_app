@@ -1,4 +1,4 @@
-package com.myappodealapp.newarchitecture.components;
+package com.captaineboy.my_appodeal_app.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

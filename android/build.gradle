@@ -61,5 +61,9 @@ allprojects {
             }
         }
         maven { url 'https://www.jitpack.io' }
+
+        //Appodeal Respository
+        jcenter()
+        maven { url "https://artifactory.appodeal.com/appodeal" }
     }
 }
